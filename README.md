@@ -7,6 +7,6 @@ pkg update -y
 pkg upgrade -y
 pkg install git -y
 pkg install python3 -y
-git clone https://github.com/adithya9090/Termux-RFNoiser
+git clone https://github.com/adithya9090/Termux-RFNoiser.git
 cd Termux-RFNoiser
 bash rfn
