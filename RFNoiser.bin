@@ -1,0 +1,50 @@
+import time as t
+import random as r
+import datetime
+e = datetime.datetime.now()
+u=r.randint(0,1)
+print("				RF NOISER ")
+print("")
+print("Author:Adithya Cyrus")
+print("Frequency:88-108 khz")
+print("Anteena:HeadPhone")
+print("Version:18.6")
+print("")
+while True:
+   print("1:Select Frequency")
+   print("2:Noise Selected Frequency")
+   print("3:Update")
+   print("4:Clock")
+   print("5:Exit")
+   q1=input("Select a option to perform: ")
+   if q1=="1":
+      print("Seeking RF Permission...")
+      t.sleep(3)
+      print("Done!")
+      print("")
+      q2=input("Enter target frequency: ")
+      print("Setting Frequency...")
+      t.sleep(1)
+      print("Done!")
+      print("")
+   if q1=="2":
+      print("Starting Noiser.bin...")
+      t.sleep(1)
+      print("Noising",q2)
+      print("CTRL+C to STOP")
+      t.sleep(3500)
+   if q1=="3":
+      print("Updating From",q2)
+      t.sleep(1)
+      print("Updating...")
+      t.sleep(6)
+      print("")
+   if q1=="4":
+      print("Getting Time From",q2)
+      print("Time: = %s:%s:%s" % (e.hour, e.minute, e.second))
+      print("")
+   if q1=="5":
+      print("Exiting...")
+      t.sleep(1)
+      exit()
+

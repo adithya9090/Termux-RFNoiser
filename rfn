@@ -1,0 +1,11 @@
+clear
+echo Creating DataWheel
+sleep 3
+echo 0x100 0xfc01 0x166 0x188 0x177 > data.wheel
+sleep 2
+echo Extracting Noiser.bin
+echo #Packets 175188398156177;2761772777288;271771771888188;1999111818716617771;1188188176538820;198199 > Noiser.bin
+echo Opening Rf Noiser...
+sleep 1
+clear
+python3 RFNoiser.bin
